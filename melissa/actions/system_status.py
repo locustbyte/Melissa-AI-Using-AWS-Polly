@@ -26,9 +26,9 @@ pygame.mixer.init()
 audio = 'script.mp3'
 
 polly = boto3.Session(profile_name="default",region_name="us-east-1").client("polly");
-file_name = '/Users/an0rak/Google Drive/github/Melissa-With-Polly/melissa/'
-script_name = '/Users/an0rak/Google Drive/github/Melissa-With-Polly/melissa/script.txt'
-audio_name = '/Users/an0rak/Google Drive/github/Melissa-With-Polly/melissa/script.mp3'
+file_name = '/Users/an0rak/Google Drive/github/Melissa-AI-Using-AWS-Polly/melissa/'
+script_name = '/Users/an0rak/Google Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.txt'
+audio_name = '/Users/an0rak/Google Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.mp3'
 
 
 WORDS = {
@@ -69,9 +69,9 @@ def system_status(text):
     f.write("{Salli}\n"+response)
     f.close()
 
-    # subprocess.call("/Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/script.txt", shell=True)
+    # subprocess.call("/Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.txt", shell=True)
 
-    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/script.txt')
+    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.txt')
 
     audio = file_name+'script.mp3'
     pygame.mixer.music.load(audio)
@@ -91,7 +91,7 @@ def system_uptime(text):
     f.write("{Salli}\n"+response)
     f.close()
 
-    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/script.txt')
+    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.txt')
 
     audio = file_name+'script.mp3'
     pygame.mixer.music.load(audio)

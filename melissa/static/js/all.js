@@ -45,14 +45,14 @@ function preloadImages(array) {
 //Recurring Functions
 
 function animateGalCont(index){
-	$("#imgGalCont").animate({left:'1400px', opacity:0},200,function(){
+	$("#imgGalCont").animate({opacity:0},200,function(){
 		//initUnslider(index);
-		$("#imgGalCont").animate({left:'150px',opacity:'1'},500,function(){});		
+		$("#imgGalCont").animate({opacity:'1'},500,function(){});		
 	});
 }
 
 function showGalCont(){
-	$("#imgGalCont").animate({left:'150px',opacity:'1'},500,function(){});
+	$("#imgGalCont").animate({opacity:'1'},500,function(){});
 }
 
 function animateFooterGraph(elem){

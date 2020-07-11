@@ -21,9 +21,9 @@ pygame.mixer.init()
 audio = 'script.mp3'
 
 polly = boto3.Session(profile_name="default",region_name="us-east-1").client("polly");
-file_name = '/Users/an0rak/Google Drive/github/Melissa-With-Polly/melissa/'
-script_name = '/Users/an0rak/Google Drive/github/Melissa-With-Polly/melissa/script.txt'
-audio_name = '/Users/an0rak/Google Drive/github/Melissa-With-Polly/melissa/script.mp3'
+file_name = '/Users/an0rak/Google Drive/github/Melissa-AI-Using-AWS-Polly/melissa/'
+script_name = '/Users/an0rak/Google Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.txt'
+audio_name = '/Users/an0rak/Google Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.mp3'
 
 # output = os.path.join(audio_name)
 # file = open(output, "wb")
@@ -56,7 +56,7 @@ def who_are_you(text):
     f.write("{Salli}\n" + random.choice(messages))
     f.close()
 
-    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/script.txt')
+    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.txt')
 
     audio = file_name+'script.mp3'
     pygame.mixer.music.load(audio)
@@ -75,7 +75,7 @@ def toss_coin(text):
     f.write("{Salli}\nI just flipped a coin. It shows " + random.choice(outcomes))
     f.close()
 
-    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/script.txt')
+    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.txt')
 
     audio = file_name+'script.mp3'
     pygame.mixer.music.load(audio)
@@ -95,7 +95,7 @@ def how_am_i(text):
     f.write("{Salli}\n"+random.choice(replies_how))
     f.close()
 
-    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/script.txt')
+    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.txt')
 
     audio = file_name+'script.mp3'
     pygame.mixer.music.load(audio)
@@ -133,7 +133,7 @@ def are_you_up(text):
     f.write("{Salli}\n"+random.choice(replies))
     f.close()
 
-    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/script.txt')
+    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.txt')
 
     audio = file_name+'script.mp3'
     pygame.mixer.music.load(audio)
@@ -159,7 +159,7 @@ def open_Chrome(text):
     f.write("{Salli}\n"+random.choice(replies_chrome))
     f.close()
 
-    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/script.txt')
+    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.txt')
 
     audio = file_name+'script.mp3'
     pygame.mixer.music.load(audio)
@@ -190,7 +190,7 @@ def undefined(text):
     f.write("{Salli}\n"+random.choice(replies))
     f.close()
 
-    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-With-Polly/melissa/script.txt')
+    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.txt')
 
     audio = file_name+'script.mp3'
     pygame.mixer.music.load(audio)
