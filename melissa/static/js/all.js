@@ -287,7 +287,7 @@ function animateCursor(){
 function animateText(){
 	animateSemText();
 	animateJuryText();
-	animateHeadText();	
+	//animateHeadText();	
 }
 
 //Init calls
