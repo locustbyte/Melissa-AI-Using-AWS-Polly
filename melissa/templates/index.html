@@ -78,6 +78,7 @@
 <script>
 var socket = io.connect('http://' + document.domain + ':' + location.port);
 function speechHandler(){
+    $(".bgAnimRing").css("opacity","0.8");
 	var recognition = new (webkitSpeechRecognition)();
 	recognition.lang = 'en-US';
 	recognition.interimResults = false;
@@ -87,7 +88,11 @@ function speechHandler(){
 	recognition.onresult = function(event) {
 	    $('#imgGalIn').airport([event.results[0][0].transcript]);
 	    recognition.stop();
-		socket.emit('user speaks', {data: event.results[0][0].transcript});
+        socket.emit('user speaks', {data: event.results[0][0].transcript});
+        setTimeout(function(){ 
+            $("#imgGalIn").empty();
+            $(".bgAnimRing").css("opacity","0.3");
+        }, 3000);
 
 	};
 }

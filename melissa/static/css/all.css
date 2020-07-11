@@ -41,18 +41,19 @@ ul{
 	left:0;
 	position:absolute;
 	width:700px;
-	height:700px;
+	height:1000px;
 	z-index:-2;
 	opacity:.3;
 	margin: 0 auto;
 	left: 0;
 	right: 0;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bgAnimRing1{
 	opacity:0;
-	top:248px;
-	left:248px;
 	width:205px;
 	height:205px;
 	position:absolute;
@@ -62,8 +63,6 @@ ul{
 
 .bgAnimRing2{
 	opacity:0;
-	top:75px;
-	left:75px;
 	width:550px;
 	height:550px;
 	position:absolute;
@@ -92,16 +91,17 @@ ul{
 
 .welcomeRings{
 	position:absolute;
-	left:333px;
-	width:700px;
-	height:700px;	
+	left:initial;
+	width:100%;
+	height:1000px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .welcomeRing1{
 	opacity:.6;
 	position:absolute;
-	top:150px;
-	left:150px;
 	width:400px;
 	height:400px;
 	background-image:url(http://localhost:5000/static/images/welcomeRing1R.png);
@@ -113,8 +113,6 @@ ul{
 	position:absolute;
 	width:600px;
 	height:600px;
-	top:50px;
-	left:50px;
 	background-image:url(http://localhost:5000/static/images/welcomeRing2R.png);
 	background-repeat:no-repeat;
 }

@@ -397,4 +397,5 @@ $(document).ready(function(){
     preloadImages(cacheImg);
 	bindButtons();
 	fireLockAnim();
+	unlockApp();
 });

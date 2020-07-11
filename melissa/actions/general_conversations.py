@@ -108,8 +108,22 @@ def how_am_i(text):
 
 
 def who_am_i(text):
-    name = profile.data['name']
-    tts('You are ' + name + ', a brilliant person. I love you!')
+    replies_who = [
+        'Voice recognition detects Tan.  Howeer, should I enable camera for facial recognition?',
+        'Are we doing this?  It\'s you Tan.'
+    ]
+
+    f = open(file_name + "script.txt", "w")
+    f.write("{Salli}\n"+random.choice(replies_who))
+    f.close()
+
+    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.txt')
+
+    audio = file_name+'script.mp3'
+    pygame.mixer.music.load(audio)
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy():
+        pygame.time.Clock().tick(10)
 
 
 def where_born(text):
@@ -118,7 +132,22 @@ def where_born(text):
 
 
 def how_are_you(text):
-    tts('I am fine, thank you.')
+    replies = [
+        'Hi, i am good, how about you?',
+        'Good, how are you?'
+    ]
+
+    f = open(file_name + "script.txt", "w")
+    f.write("{Salli}\n"+random.choice(replies))
+    f.close()
+
+    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.txt')
+
+    audio = file_name+'script.mp3'
+    pygame.mixer.music.load(audio)
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy():
+        pygame.time.Clock().tick(10)
 
 
 def are_you_up(text):
@@ -144,10 +173,22 @@ def are_you_up(text):
 
 def love_you(text):
     replies = [
-               'I love you too.',
-               'You are looking for love in the wrong place.'
-              ]
-    tts(random.choice(replies))
+        'I love you too.',
+        'Dude, You\'re looking for love in the wrong place.'
+    ]
+
+    f = open(file_name + "script.txt", "w")
+    f.write("{Salli}\n"+random.choice(replies))
+    f.close()
+
+    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.txt')
+
+    audio = file_name+'script.mp3'
+    pygame.mixer.music.load(audio)
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy():
+        pygame.time.Clock().tick(10)
+
 
 def open_Chrome(text):
     replies_chrome = [
@@ -176,7 +217,25 @@ def open_Chrome(text):
 
 
 def marry_me(text):
-    tts('I have been receiving a lot of marriage proposals recently.')
+
+    replies = [
+        'Getting funnier every day',
+        'You couldn\t afford a diamond big enough'
+    ]
+
+    f = open(file_name + "script.txt", "w")
+    f.write("{Salli}\n"+random.choice(replies))
+    f.close()
+
+    os.system('python /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/actions/polly.py /Users/an0rak/Google\ Drive/github/Melissa-AI-Using-AWS-Polly/melissa/script.txt')
+
+    audio = file_name+'script.mp3'
+    pygame.mixer.music.load(audio)
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy():
+        pygame.time.Clock().tick(10)
+
+    # tts('I have been receiving a lot of marriage proposals recently.')
 
 
 def undefined(text):
