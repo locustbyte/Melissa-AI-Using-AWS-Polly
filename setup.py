@@ -33,7 +33,7 @@ setup(
           'six==1.10.0', 
           'oauthlib==1.0.3',
           'requests-oauthlib==0.5.0', 
-          'eventlet==0.20.0', 
+          'eventlet==0.31.0', 
           'Flask==1.0',
           'Flask-SocketIO==2.8.6',    
           'python-socketio==1.6.1',
